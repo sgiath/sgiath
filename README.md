@@ -1,4 +1,6 @@
-<img src="header.svg" alt="sgiath — h+ cypherpunk" width="100%" />
+<a href="https://sgiath.dev" target="_blank">
+  <img src="header.svg" alt="sgiath - h+ cypherpunk" width="100%" />
+</a>
 
 I reimplement privacy-oriented protocols and specifications in Elixir. For years
 the running joke was that I never finish any of them. Most of them are finished
