@@ -17,6 +17,7 @@ More about me at **[sgiath.dev](https://sgiath.dev)** ·
 | --- | --- |
 | [secp256k1](https://github.com/sgiath/secp256k1) | Elixir wrapper for the Bitcoin Core secp256k1 library |
 | [noise-protocol](https://github.com/sgiath/noise-protocol) | Noise Protocol Framework in pure Elixir |
+| [ex-astro](https://github.com/sgiath/ex_astro) | astronomical calculations in Elixir |
 | [nostr](https://github.com/sgiath/nostr) | Nostr libraries: [lib](https://github.com/sgiath/nostr-lib) · [client](https://github.com/sgiath/nostr-client) · [relay](https://github.com/sgiath/nostr-private-server) |
 | [spaceboy](https://github.com/sgiath/spaceboy) | server framework for the Gemini protocol |
 
@@ -37,8 +38,8 @@ More about me at **[sgiath.dev](https://sgiath.dev)** ·
 | --- | --- |
 | web | [sgiath.dev](https://sgiath.dev) |
 | email | [sgiath@sgiath.dev](mailto:sgiath@sgiath.dev) |
-| Nostr | `npub1qqqqq2z444usdf6k306djuwcyptfjj4x0teu7qzg4qj5zkkfqeeq3hlwh5` |
-| | hex: `0000002855ad7906a7568bf4d971d82056994aa67af3cf0048a825415ac90672` |
+| Nostr npub | `npub1qqqqq2z444usdf6k306djuwcyptfjj4x0teu7qzg4qj5zkkfqeeq3hlwh5` |
+| Nostr hex | `0000002855ad7906a7568bf4d971d82056994aa67af3cf0048a825415ac90672` (what can I say, I have generated my key before the npub standard was created) |
 | Matrix | `@sgiath:sgiath.dev` |
 | IRC (libera) | `sgiath` |
 | XMPP | `sgiath@sgiath.dev` |
