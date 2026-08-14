@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="220" viewBox="0 0 820 220" role="img" aria-label="sgiath — h+ cypherpunk">
+  <!-- card -->
+  <rect x="0.5" y="0.5" width="819" height="219" rx="12" fill="#0a0a0a" stroke="#27272a" />
+  <!-- window controls -->
+  <circle cx="28" cy="26" r="5" fill="#27272a" />
+  <circle cx="46" cy="26" r="5" fill="#27272a" />
+  <circle cx="64" cy="26" r="5" fill="#166534" />
+  <text x="796" y="30" text-anchor="end" font-family="ui-monospace, 'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#3f3f46">sgiath.dev</text>
+  <!-- starfield -->
+  <g fill="#4ade80">
+    <circle cx="640" cy="70" r="1.4" opacity="0.35" />
+    <circle cx="700" cy="120" r="1.1" opacity="0.25" />
+    <circle cx="754" cy="86" r="1.6" opacity="0.4" />
+    <circle cx="590" cy="160" r="1.2" opacity="0.2" />
+    <circle cx="676" cy="182" r="1.3" opacity="0.3" />
+    <circle cx="734" cy="152" r="1.0" opacity="0.25" />
+    <circle cx="778" cy="188" r="1.5" opacity="0.35" />
+    <circle cx="620" cy="112" r="0.9" opacity="0.2" />
+    <circle cx="712" cy="58" r="1.0" opacity="0.25" />
+    <circle cx="770" cy="128" r="0.9" opacity="0.2" />
+  </g>
+  <!-- terminal -->
+  <g font-family="ui-monospace, 'JetBrains Mono', 'Fira Code', monospace">
+<text x="36" y="84" font-size="15" xml:space="preserve">
+<tspan fill="#71717a">~ $ </tspan><tspan fill="#e4e4e7">whoami</tspan>
+</text>
+    <text x="36" y="132" font-size="38" font-weight="600" fill="#4ade80">sgiath</text>
+    <text x="36" y="166" font-size="15" fill="#a1a1aa">h+ cypherpunk · reimplementing privacy protocols in Elixir</text>
+<text x="36" y="196" font-size="15" xml:space="preserve">
+<tspan fill="#71717a">~ $ </tspan>
+</text>
+    <rect x="72" y="184" width="9" height="15" fill="#4ade80">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite" />
+    </rect>
+  </g>
+</svg>
