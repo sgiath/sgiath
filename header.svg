@@ -1,49 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="820" height="220" viewBox="0 0 820 220" role="img" aria-label="sgiath — h+ cypherpunk">
-  <!-- card -->
   <defs>
     <clipPath id="card"><rect x="1" y="1" width="818" height="218" rx="11" /></clipPath>
   </defs>
+  <!-- card -->
   <rect x="0.5" y="0.5" width="819" height="219" rx="12" fill="#0a0a0a" stroke="#27272a" />
   <!-- window controls -->
   <circle cx="28" cy="26" r="5" fill="#27272a" />
   <circle cx="46" cy="26" r="5" fill="#27272a" />
   <circle cx="64" cy="26" r="5" fill="#166534" />
   <text x="796" y="30" text-anchor="end" font-family="ui-monospace, 'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#3f3f46">sgiath.dev</text>
-  <!-- solar system: tilted elliptical orbits with trailing arcs -->
+  <!--
+    solar system: tilted elliptical orbits with moving planets.
+    Each orbit is a circle inside a rotate+scale(1, k) coordinate system, which
+    turns circular motion into elliptical motion. Trail + planet live in one
+    rotating group so the trail stays behind the planet. Strokes use
+    vector-effect="non-scaling-stroke" so the scale does not distort them.
+  -->
   <g clip-path="url(#card)">
-  <g transform="translate(640, 120)">
-    <!-- orbit 1 -->
-    <g transform="rotate(-18)">
-      <ellipse rx="26" ry="10" fill="none" stroke="#4ade80" stroke-opacity="0.08" />
-      <path d="M -22.5 5.0 A 26 10 0 0 1 -22.5 -5.0" fill="none" stroke="#4ade80" stroke-opacity="0.35" stroke-linecap="round" />
-      <circle cx="-22.5" cy="-5.0" r="1.6" fill="#4ade80" opacity="0.6" />
+  <g transform="translate(640, 120)" fill="none" stroke="#4ade80">
+    <!-- orbit 1: rx 26, ry 10 -->
+    <g transform="rotate(-18) scale(1, 0.3846)">
+      <circle r="26" stroke-opacity="0.08" vector-effect="non-scaling-stroke" />
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="190" to="-170" dur="20s" repeatCount="indefinite" />
+        <path d="M 8.9 -24.4 A 26 26 0 0 1 26 0" stroke-opacity="0.35" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+        <path d="M 26 0 l 0 0.01" stroke-opacity="0.6" stroke-width="3.2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+      </g>
     </g>
-    <!-- orbit 2 -->
-    <g transform="rotate(-22)">
-      <ellipse rx="52" ry="20" fill="none" stroke="#4ade80" stroke-opacity="0.08" />
-      <path d="M 48.9 -6.8 A 52 20 0 0 1 36.8 14.1" fill="none" stroke="#4ade80" stroke-opacity="0.3" stroke-linecap="round" />
-      <circle cx="36.8" cy="14.1" r="2.0" fill="#4ade80" opacity="0.55" />
+    <!-- orbit 2: rx 52, ry 20 -->
+    <g transform="rotate(-22) scale(1, 0.3846)">
+      <circle r="52" stroke-opacity="0.08" vector-effect="non-scaling-stroke" />
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="30" to="-330" dur="36s" repeatCount="indefinite" />
+        <path d="M 17.8 -48.9 A 52 52 0 0 1 52 0" stroke-opacity="0.3" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+        <path d="M 52 0 l 0 0.01" stroke-opacity="0.55" stroke-width="4" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+      </g>
     </g>
-    <!-- orbit 3 -->
-    <g transform="rotate(-14)">
-      <ellipse rx="82" ry="30" fill="none" stroke="#4ade80" stroke-opacity="0.07" />
-      <path d="M -80.8 -5.2 A 82 30 0 0 1 -21.2 -29.0" fill="none" stroke="#4ade80" stroke-opacity="0.28" stroke-linecap="round" />
-      <circle cx="-21.2" cy="-29.0" r="1.8" fill="#4ade80" opacity="0.5" />
+    <!-- orbit 3: rx 82, ry 30 -->
+    <g transform="rotate(-14) scale(1, 0.3659)">
+      <circle r="82" stroke-opacity="0.07" vector-effect="non-scaling-stroke" />
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="235" to="-125" dur="60s" repeatCount="indefinite" />
+        <path d="M 28.0 -77.1 A 82 82 0 0 1 82 0" stroke-opacity="0.28" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+        <path d="M 82 0 l 0 0.01" stroke-opacity="0.5" stroke-width="3.6" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+      </g>
     </g>
-    <!-- orbit 4 -->
-    <g transform="rotate(-24)">
-      <ellipse rx="112" ry="44" fill="none" stroke="#4ade80" stroke-opacity="0.06" />
-      <path d="M 64.2 36.0 A 112 44 0 0 1 -64.2 36.0" fill="none" stroke="#4ade80" stroke-opacity="0.22" stroke-linecap="round" />
-      <circle cx="-64.2" cy="36.0" r="2.4" fill="#4ade80" opacity="0.45" />
+    <!-- orbit 4: rx 112, ry 44 -->
+    <g transform="rotate(-24) scale(1, 0.3929)">
+      <circle r="112" stroke-opacity="0.06" vector-effect="non-scaling-stroke" />
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="100" to="-260" dur="95s" repeatCount="indefinite" />
+        <path d="M 38.3 -105.2 A 112 112 0 0 1 112 0" stroke-opacity="0.22" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+        <path d="M 112 0 l 0 0.01" stroke-opacity="0.45" stroke-width="4.8" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+      </g>
     </g>
-    <!-- orbit 5 -->
-    <g transform="rotate(-17)">
-      <ellipse rx="145" ry="58" fill="none" stroke="#4ade80" stroke-opacity="0.05" />
-      <path d="M -49.6 -54.5 A 145 58 0 0 1 118.8 -33.3" fill="none" stroke="#4ade80" stroke-opacity="0.18" stroke-linecap="round" />
-      <circle cx="118.8" cy="-33.3" r="2.0" fill="#4ade80" opacity="0.4" />
+    <!-- orbit 5: rx 145, ry 58 -->
+    <g transform="rotate(-17) scale(1, 0.4)">
+      <circle r="145" stroke-opacity="0.05" vector-effect="non-scaling-stroke" />
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="300" to="-60" dur="140s" repeatCount="indefinite" />
+        <path d="M 49.6 -136.3 A 145 145 0 0 1 145 0" stroke-opacity="0.18" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+        <path d="M 145 0 l 0 0.01" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+      </g>
     </g>
     <!-- sun -->
-    <circle r="4" fill="#4ade80" opacity="0.65" />
+    <circle r="4" fill="#4ade80" stroke="none" opacity="0.65" />
   </g>
   </g>
   <!-- terminal -->
