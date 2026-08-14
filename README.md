@@ -1,25 +1,30 @@
 <img src="header.svg" alt="sgiath — h+ cypherpunk" width="100%" />
 
-My niche is reimplementing privacy-oriented projects and specifications in Elixir
-and never finishing them. I like knowing what the important pieces are doing
+I reimplement privacy-oriented protocols and specifications in Elixir. For years
+the running joke was that I never finish any of them. Most of them are finished
+now, so I need a new joke. I like knowing what the important pieces are doing
 underneath the friendly API.
 
-More about me (and things I actually finished) at
-**[sgiath.dev](https://sgiath.dev)** · [blog](https://sgiath.dev/blog) ·
-[projects](https://sgiath.dev/projects) · [libraries](https://sgiath.dev/libraries) ·
-[resume](https://sgiath.dev/resume)
+More about me at **[sgiath.dev](https://sgiath.dev)** ·
+[blog](https://sgiath.dev/blog) · [projects](https://sgiath.dev/projects) ·
+[libraries](https://sgiath.dev/libraries) · [resume](https://sgiath.dev/resume)
 
-## unfinished so far
+## finished
 
-| project | status |
+| project | what it is |
 | --- | --- |
-| [secp256k1](https://github.com/sgiath/secp256k1) — Elixir wrapper for Bitcoin Core secp256k1 | native bindings, works |
-| [noise-protocol](https://github.com/sgiath/noise-protocol) — Noise Protocol Framework in pure Elixir | handshakes and all |
-| [nostr](https://github.com/sgiath/nostr) — collection of Nostr libraries ([lib](https://github.com/sgiath/nostr-lib) · [client](https://github.com/sgiath/nostr-client) · [relay](https://github.com/sgiath/nostr-private-server)) | usable, eternally WIP |
-| [reticulum](https://github.com/sgiath/reticulum) — Reticulum network stack in Elixir | in progress |
-| [spaceboy](https://github.com/sgiath/spaceboy) — server framework for the Gemini protocol | small web, small framework |
+| [secp256k1](https://github.com/sgiath/secp256k1) | Elixir wrapper for the Bitcoin Core secp256k1 library |
+| [noise-protocol](https://github.com/sgiath/noise-protocol) | Noise Protocol Framework in pure Elixir |
+| [nostr](https://github.com/sgiath/nostr) | Nostr libraries: [lib](https://github.com/sgiath/nostr-lib) · [client](https://github.com/sgiath/nostr-client) · [relay](https://github.com/sgiath/nostr-private-server) |
+| [spaceboy](https://github.com/sgiath/spaceboy) | server framework for the Gemini protocol |
 
-## not even started yet
+## in progress
+
+| project | what it is |
+| --- | --- |
+| [reticulum](https://github.com/sgiath/reticulum) | Reticulum network stack in Elixir |
+
+## someday
 
 - full Bitcoin network stack in Elixir
 - full Lightning network in Elixir
