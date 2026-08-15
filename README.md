@@ -2,8 +2,6 @@
   <img src="header.svg" alt="sgiath - h+ cypherpunk" width="100%" />
 </a>
 
-![](./header.svg)
-
 I reimplement privacy-oriented protocols and specifications in Elixir. For years
 the running joke was that I never finish any of them. Most of them are finished
 now, so I need a new joke. I like knowing what the important pieces are doing
